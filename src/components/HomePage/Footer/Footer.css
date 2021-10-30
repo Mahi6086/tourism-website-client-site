@@ -1,0 +1,12 @@
+.icon:hover {
+  color: tomato;
+  /* font-size: 2rem;
+  transition: all 0.3s linear;
+  transform: scale(120%); */
+}
+.text {
+  color: tomato;
+}
+.logo:hover {
+  color: tomato;
+}
