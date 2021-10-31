@@ -16,7 +16,10 @@ const Register = () => {
   };
 
   return (
-    <div style={{ marginTop: "300px" }} className="container text-center">
+    <div
+      style={{ marginTop: "300px", marginBottom: "0px" }}
+      className="container text-center"
+    >
       <h1 style={{ color: "tomato", fontSize: "50px" }} className="fw-bolder">
         Welcome To Our Website
       </h1>
@@ -27,6 +30,7 @@ const Register = () => {
           backgroundColor: "tomato",
           border: "none",
           borderRadius: "10px",
+          marginBottom: "100px",
         }}
         class="d-grid gap-2 col-6 mx-auto mt-4"
       >

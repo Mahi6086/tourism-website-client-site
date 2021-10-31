@@ -1,33 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import "./ExploreTour.css";
-import { useForm } from "react-hook-form";
+
+import { Link } from "react-router-dom";
 
 const ExploreTour = () => {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-
   const { tourId } = useParams();
   const [exploreTour, setExploreTour] = useState({});
 
   useEffect(() => {
-    fetch(
-      "https://raw.githubusercontent.com/Mahi6086/FAKE-DATA/main/Food/Tour.json"
-    )
+    fetch(`http://localhost:5000/tours/${tourId}`)
       .then((res) => res.json())
-      .then((data) => {
-        const details = data.find((dp) => dp?.id == tourId);
-        setExploreTour(details);
-      });
-  }, [tourId]);
+      .then((data) => setExploreTour(data));
+  }, []);
   return (
-    <div className="tour-details">
-      <div className="container mt-5">
+    <div style={{ backgroundColor: "#FAF5EE" }} className="tour-details">
+      <div className="container mt-5 pb-5 pt-5">
         <div>
           <h4 style={{ color: "tomato" }} className="text-center fw-bold">
             Time to Travel
@@ -95,17 +83,19 @@ const ExploreTour = () => {
                 <p>50 Person In Total</p>
                 <p>12</p>
               </div>
-              <button
-                style={{ backgroundColor: "tomato" }}
-                type="button"
-                className="btn btn-lg fw-bolder fs-5"
-              >
-                Booking Now
-              </button>
+              <Link to="/placeOrder">
+                <button
+                  style={{ backgroundColor: "tomato" }}
+                  type="button"
+                  className="btn btn-lg fw-bolder fs-5"
+                >
+                  Booking Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>
-        <div className=" mt-5 mb-5 rounded rounded-3">
+        {/*    <div className=" mt-5 mb-5 rounded rounded-3">
           <h1
             style={{ color: "tomato", fontSize: "40px" }}
             className="fw-bolder text-center pt-5 pb-5"
@@ -114,7 +104,7 @@ const ExploreTour = () => {
           </h1>
           <div>
             <form onSubmit={handleSubmit(onSubmit)}>
-              {/* register your input into the hook by invoking the "register" function */}
+            
               <input
                 className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
                 type="text"
@@ -139,7 +129,7 @@ const ExploreTour = () => {
                 placeholder="Please Type Your E-mail"
               />
               <br /> <br />
-              {/* include validation with required or other standard HTML validation rules */}
+             
               <input
                 className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
                 type="number"
@@ -158,7 +148,7 @@ const ExploreTour = () => {
               />
               <br />
               <br />
-              <input
+              <textarea
                 className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
                 type="textarea"
                 {...register("message", { required: true })}
@@ -167,7 +157,7 @@ const ExploreTour = () => {
               />
               <br />
               <br />
-              {/* errors will return when field validation fails  */}
+            
               {errors.exampleRequired && <span>This field is required</span>}
               <input
                 style={{ backgroundColor: "tomato" }}
@@ -176,7 +166,7 @@ const ExploreTour = () => {
               />
             </form>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

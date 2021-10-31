@@ -2,6 +2,7 @@ import React from "react";
 import img1 from "../../../images/Banner/banner-1.jpg";
 import img2 from "../../../images/Banner/banner6 (2).jpg";
 import img3 from "../../../images/Banner/banner3.jpg";
+import "./Banner.css";
 
 const Banner = () => {
   return (
@@ -41,16 +42,16 @@ const Banner = () => {
               alt="..."
             />
             <div
-              style={{ marginBottom: "600px" }}
-              className="carousel-caption d-none d-md-block"
+              // style={{ marginBottom: "600px" }}
+              className="carousel-caption d-none d-md-block tour-title"
             >
               <h1
                 style={{
-                  fontSize: "100px",
                   color: "tomato",
 
                   fontWeight: "bolder",
                 }}
+                className="banner-title"
               >
                 Plan Your Best Holiday <br /> With Us & Enjoy
               </h1>
@@ -66,16 +67,16 @@ const Banner = () => {
               alt="..."
             />
             <div
-              style={{ marginBottom: "600px" }}
-              className="carousel-caption d-none d-md-block"
+              // style={{ marginBottom: "600px" }}
+              className="carousel-caption d-none d-md-block tour-title"
             >
               <h1
                 style={{
-                  fontSize: "100px",
                   color: "tomato",
 
                   fontWeight: "bolder",
                 }}
+                className="banner-title"
               >
                 Explore Your Summer Holiday <br /> With Us & Enjoy
               </h1>
@@ -91,16 +92,16 @@ const Banner = () => {
               alt="..."
             />
             <div
-              style={{ marginBottom: "600px" }}
-              className="carousel-caption d-none d-md-block"
+              // style={{ marginBottom: "600px" }}
+              className="carousel-caption d-none d-md-block tour-title"
             >
               <h1
                 style={{
-                  fontSize: "100px",
                   color: "tomato",
 
                   fontWeight: "bolder",
                 }}
+                className="banner-title"
               >
                 Travel & Adventures
               </h1>

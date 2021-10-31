@@ -11,7 +11,7 @@ const Admin = () => {
       <div className="dashboard">
         <div className="admin-box">
           <div className="row admin-container ">
-            <div className="col-md-2">
+            <div className="col 12 col-md-2">
               <div className="admin-area pt-5">
                 <h2
                   style={{ color: "tomato" }}
@@ -41,7 +41,7 @@ const Admin = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-10 text-center  text-center">
+            <div className="col-12 col-md-10 text-center  text-center">
               <div className="right-part ">
                 {control === "addBooking" && <AddBooking></AddBooking>}
                 {control === "manageBooking" && <ManageBooking></ManageBooking>}

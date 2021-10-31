@@ -12,6 +12,10 @@ import NotFound from "./components/NotFound/NotFound";
 import ExploreTour from "./components/ExploreTour/ExploreTour";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import AdminDeshBoard from "./components/AdminDeshBoard/AdminDeshBoard";
+import AddBooking from "./components/AdminDeshBoard/AddBooking/AddBooking";
+import ManageBooking from "./components/AdminDeshBoard/ManageBooking/ManageBooking";
+import YourBooking from "./components/AdminDeshBoard/YourBooking/YourBooking";
+import PlaceOrder from "./components/PlaceOrder/PlaceOrder";
 
 function App() {
   return (
@@ -43,11 +47,23 @@ function App() {
           <Route path="/register">
             <Register></Register>
           </Route>
+          <Route path="/placeOrder">
+            <PlaceOrder></PlaceOrder>
+          </Route>
+          <Route exact path="/addBooking">
+            <AddBooking></AddBooking>
+          </Route>
+          <Route exact path="/manageBooking">
+            <ManageBooking></ManageBooking>
+          </Route>
+          <Route exact path="/yourBooking">
+            <YourBooking></YourBooking>
+          </Route>
           <Route path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </Router>
     </AuthProvider>
   );

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Tour.css";
 
 const Tour = (props) => {
-  const { id, name, image, description, price, days, location, person } =
+  const { _id, name, image, description, price, days, location, person } =
     props.tour;
   return (
     <div>
@@ -42,7 +42,6 @@ const Tour = (props) => {
                 </small>
               </span>
             </div>
-            <p className="card-text text-black-50 mt-2">{description}</p>
             <div
               style={{ backgroundColor: "#FAF5EE" }}
               className="row row-cols-md-3 g-3 mb-3 mt-3 pb-3 text-black-50 fw-bolder ps-4 rounded rounded-3"
@@ -51,7 +50,9 @@ const Tour = (props) => {
               <span>{person}+</span>
               <span>{location}</span>
             </div>
-            <Link to={`/exploreTour/${id}`}>
+            <p className="card-text text-black-50 mt-2">{description}</p>
+
+            <Link to={`/exploreTour/${_id}`}>
               <button
                 style={{
                   backgroundColor: "coral",

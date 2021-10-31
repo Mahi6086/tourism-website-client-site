@@ -16,7 +16,10 @@ import img6 from "../../../images/footer/footer-gallery-7.jpg";
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "#212529" }} className="py-5">
+    <footer
+      style={{ backgroundColor: "#212529", marginBottom: "0px" }}
+      className="py-5"
+    >
       <div className="container">
         <div className="row d-flex justify-content-center align-items-center text-white-50">
           <div className="col-md-3">

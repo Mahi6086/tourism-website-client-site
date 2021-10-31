@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
 
@@ -5,10 +6,19 @@ const AddBooking = () => {
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+
+    axios.post("http://localhost:5000/tours", data).then((res) => {
+      if (res.data.insertedId) {
+        alert("added successfully");
+        reset();
+      }
+    });
+  };
 
   return (
     <div
@@ -69,12 +79,21 @@ const AddBooking = () => {
           />
           <br />
           <br />
+          <textarea
+            className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
+            type="textarea"
+            {...register("description", { required: true })}
+            required
+            placeholder="Please Type Description"
+          />
+          <br />
+          <br />
           <input
             className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
             type="link"
-            {...register("imagelink", { required: true })}
+            {...register("image", { required: true })}
             required
-            placeholder="Please Type image Link"
+            placeholder="Please Type image URL"
           />
           <br />
           <br />

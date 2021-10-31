@@ -13,7 +13,7 @@ const Home = () => {
       <TourCollection></TourCollection>
       <Tours></Tours>
       <TravelArragement></TravelArragement>
-      <Footer></Footer>
+      {/*  <Footer></Footer> */}
     </div>
   );
 };

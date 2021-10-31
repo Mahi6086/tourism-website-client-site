@@ -4,7 +4,7 @@ import Tour from "../Tour/Tour";
 const Tours = () => {
   const [tours, setTours] = useState([]);
   useEffect(() => {
-    fetch("./tour.json")
+    fetch("http://localhost:5000/tours")
       .then((res) => res.json())
       .then((data) => setTours(data));
   }, []);
@@ -17,7 +17,7 @@ const Tours = () => {
         borderRadius: "10px",
       }}
     >
-      <div className="container-md mt-5 pt-5 pb-5">
+      <div className="container-md  pt-5 pb-5">
         <div>
           <h4 style={{ color: "#E8604C" }} className="text-center fw-bold">
             The Top Places For
@@ -31,7 +31,7 @@ const Tours = () => {
           </p>
           <div className="row row-cols-1 row-cols-md-3 g-4">
             {tours.map((tour) => (
-              <Tour key={tour.id} tour={tour}></Tour>
+              <Tour key={tour._id} tour={tour}></Tour>
             ))}
           </div>
         </div>

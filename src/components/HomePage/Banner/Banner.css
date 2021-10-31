@@ -1,0 +1,14 @@
+.tour-title {
+  margin-bottom: 600px;
+}
+.banner-title {
+  font-size: 100px;
+}
+@media only screen and (max-width: 688px) {
+  .tour-title {
+    margin-bottom: 0px;
+  }
+  .banner-title {
+    font-size: 30px;
+  }
+}

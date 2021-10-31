@@ -1,4 +1,29 @@
-# Getting Started with Create React App
+This is a Tourism Related website. To build a full-stack website using React, firebase, react router, node, express, mongodb etc..
+
+### About This website
+
+Plan Your Best Holiday With Tevily & Enjoy.
+Travelling Around The World. Journy To Explore The Nature.
+
+Tevily is a rapidly-growing global online travel agency, Tevily is here to help you plan the perfect trip. Whether you're going on holiday, taking a business trip, or looking to set up a corporate travel account, Trip.com is here to help you travel the world with cheap flights, discount hotels, and train tickets. Looking to find great travel deals or enjoy the biggest savings on your next trip? Tevily has you covered. With our easy-to-use website and app, along with 24-hour customer service, booking your next trip couldn't be simpler. With Tevily, quality travel services in over a dozen languages including English, Mandarin, Cantonese, Japanese, Korean, German, French, and Spanish are just a call—or click—away.
+
+### Used React Authentication
+
+This Tourism website, we used react authentication from firebase. Any Traveller can easily taken services from this site, for this we added to contact part, Google signin part using react-authentication. Customer can easily Booking tour her/his favourite places from this site.
+
+### Used Private Route
+
+We used this site private route & react authentication from firebase. In this website has a Admin parts. In admin parts has three sections such as Your Booking, Managing All Booking, Add Your Booking. We used private route this section. Normaly you can not enter this section. If you want to enter Admin Section , you need to Google login before enter this sections.
+
+### Features Of This Full-Stack Project
+
+This Website name is Tevily. As through, this is a full-stack website it has two sites. 1.Client site 2. server site. Making Client site is used HTML5, CSS3, Bootstrap, React JS, React Router, Reack-HooK form & FireBase Authentication. Making Backend site is used node JS, express, mongodb etc. In this Website We used data from MongoDB. The Services part will update dynamically if you wanted to show a single service information, click on service button showing details.This is completely responsive. As it was styled with bootstrap. This site was deployed on FireBase. The link is provided in the top. The only bug of this site is that you can hire a single developer multiple times in a single project. That is unrealistic.
+
+### Used Resouces
+
+In the project, we used: The website ideas are collected from Themeforst website & taken image from unsplash, icon from flat-icon & font-awesome. Used Roboto font from google. This was my first offical project on node, MongoDB & Express. I used private route. React-authentication & private route used from Firebase. I used Bootstrap to style the whole project. Some Pure CSS was used in this project!
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +93,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ -->

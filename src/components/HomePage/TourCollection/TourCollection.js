@@ -8,7 +8,7 @@ import tour6 from "../../../images/Tour Collection/road-signs.png";
 
 const TourCollection = () => {
   return (
-    <div className="mt-5 container">
+    <div className="mt-5 mb-5 container">
       <h4 style={{ color: "#E8604C" }} className="text-center fw-bold">
         Are you ready to travel?
       </h4>
