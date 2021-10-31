@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AddBooking from "../AddBooking/AddBooking";
 import ManageBooking from "../ManageBooking/ManageBooking";
+import YourBooking from "../YourBooking/YourBooking";
 import "./Admin.css";
 
 const Admin = () => {
@@ -44,7 +45,7 @@ const Admin = () => {
               <div className="right-part ">
                 {control === "addBooking" && <AddBooking></AddBooking>}
                 {control === "manageBooking" && <ManageBooking></ManageBooking>}
-                {/*  {control === "YourBooking" && <AllVolunteers></AllVolunteers>} */}
+                {control === "yourBooking" && <YourBooking></YourBooking>}
               </div>
             </div>
           </div>

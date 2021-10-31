@@ -1,6 +1,7 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-const ManageBooking = () => {
+
+const YourBooking = () => {
   return (
     <div className="bg-light">
       <div className="pt-5 pb-5">
@@ -8,10 +9,9 @@ const ManageBooking = () => {
           style={{ color: "tomato", fontSize: "40px" }}
           className="mt-1 mb-4 text-center fw-bolder"
         >
-          Manage All Booking{" "}
+          Your Booking{" "}
         </h1>{" "}
-        {/* {event?.length} */}
-        <Table striped bordered hover className="border  border-info">
+        <Table striped bordered hover className=" border  border-warning">
           <thead>
             <tr>
               <th className="p-3">SL</th>
@@ -36,8 +36,39 @@ const ManageBooking = () => {
           ))} */}
         </Table>
       </div>
+      {/* <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>SL</th>
+            <th>Location</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td colSpan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </Table> */}
     </div>
   );
 };
 
-export default ManageBooking;
+export default YourBooking;

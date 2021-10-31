@@ -1,7 +1,8 @@
 import React from "react";
 import img1 from "../../../images/Banner/banner-1.jpg";
-import img2 from "../../../images/Banner/banner2.jpg";
+import img2 from "../../../images/Banner/banner6 (2).jpg";
 import img3 from "../../../images/Banner/banner3.jpg";
+
 const Banner = () => {
   return (
     <div>

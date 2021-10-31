@@ -1,36 +1,60 @@
 [
   {
     "id": 11,
+    "price": 350,
+    "days": 3,
+    "person": 12,
+    "location": "MALDIVES",
     "image": "https://i.ibb.co/Sx4PLxm/popular-tours-img-1.jpg",
     "name": "Maldives Resort",
     "description": "The Maldives are a perfect destination for honeymoons, anniversaries, or for those simply looking for a romantic getaway. Families are also well catered for, with many resorts offering great multi-bedroom villas that are located both on the beach and overwater. "
   },
   {
     "id": 22,
+    "price": 450,
+    "days": 5,
+    "person": 8,
+    "location": "ITALY",
     "image": "https://i.ibb.co/WW9fj9B/popular-tours-img-4.jpg",
     "name": "Sea Side",
     "description": "The biggest mistake writers make is to describe the sea from the narrator out. What I mean by this is that most people try to describe a scene from what their eyes or imagination focus in on first. That is usually the beach, the waves and what is on the sea."
   },
   {
     "id": 33,
+    "price": 550,
+    "days": 2,
+    "person": 3,
+    "location": "BALI",
     "image": "https://i.ibb.co/2KJzsgs/dominic-krainer-tsn-JEq4744s-unsplash.jpg",
     "name": "Dream Bali Tour",
     "description": "Live out the holiday you've always wanted in your own tropical paradise at The Bali Dream Villa Seminyak in Kuta, Bali, Indonesia. Here, we present you with 30 luxurious and exclusive private pool villas that are dressed in beautiful."
   },
   {
     "id": 44,
+    "price": 750,
+    "days": 6,
+    "person": 15,
+    "location": "SPAN",
     "image": "https://i.ibb.co/r5nLp2G/popular-tours-img-3.jpg",
     "name": "National Park Tour",
     "description": "A national park is a natural park in use for conservation purposes, created and protected by national governments. Often it is a reserve of natural, semi-natural, or developed land that a sovereign state declares or owns"
   },
   {
     "id": 55,
+    "price": 150,
+    "days": 4,
+    "person": 2,
+    "location": "THAILAND",
     "image": "https://i.ibb.co/b7CfbcJ/popular-tours-img-2.jpg",
     "name": "Moscow Red City ",
     "description": "Moscow Red Square has an almost rectangular shape and is 70 meters wide and 330 meters long. It extends lengthways from northwest to southeast along part of the wall of the Kremlin that forms its boundary on the southwest side"
   },
   {
     "id": 66,
+    "price": 850,
+    "days": 8,
+    "person": 18,
+    "location": "AUSTRALIA",
     "image": "https://i.ibb.co/KxTKY7Z/photo-1520250497591-112f2f40a3f4.jpg",
     "name": "Depth of Beach",
     "description": "If you’ve seen Jaws, The Meg or any deep-sea thriller, then you’ve seen some of the scariest ocean creatures humans have imagined. The average depth of the ocean is 3,700 meters. But the deepest part If you’ve seen Jaws,But the"

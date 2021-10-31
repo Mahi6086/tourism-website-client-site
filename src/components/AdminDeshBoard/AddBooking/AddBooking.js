@@ -22,46 +22,70 @@ const AddBooking = () => {
         Please Add Booking
       </h1>
       <hr className="container fw-bolder" />
-      <div className="w-100 m-auto mt-5">
-        <div className="border border-3 container d-flex justify-content-center align-items-center">
-          <div className="login-form p-5">
-            <form onSubmit={handleSubmit(onSubmit)}>
-              <input
-                {...register("title")}
-                placeholder="Name"
-                className="w-100 p-3 m-2 border-0 rounded rounded-3"
-              />
 
-              <br />
-
-              <br />
-              <input
-                {...register("description")}
-                placeholder="Description"
-                className="p-3 m-2 w-100 border-0 rounded rounded-3"
-              />
-              <br />
-              <br />
-              <input
-                {...register("image", { required: true })}
-                placeholder="Image Link"
-                className="p-3 m-2 w-100 border-0 rounded rounded-3"
-              />
-              <br />
-
-              <br />
-
-              {errors.exampleRequired && <span>This field is required</span>}
-
-              <input
-                type="Submit"
-                value="Submit"
-                style={{ backgroundColor: "tomato" }}
-                className="btn text-dark w-100 fw-bolder ms-2 p-2 fs-4"
-              />
-            </form>
-          </div>
-        </div>
+      <div className="container mt-3">
+        <form onSubmit={handleSubmit(onSubmit)}>
+          {/* register your input into the hook by invoking the "register" function */}
+          <input
+            className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
+            type="text"
+            {...register("name")}
+            required
+            placeholder="Please Type Title"
+          />
+          <br /> <br />
+          <input
+            className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
+            type="text"
+            {...register("location")}
+            required
+            placeholder="Please Type Location"
+          />
+          <br /> <br />
+          <input
+            className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
+            type="number"
+            {...register("price")}
+            required
+            placeholder="Please Type Price"
+          />
+          <br /> <br />
+          {/* include validation with required or other standard HTML validation rules */}
+          <input
+            className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
+            type="number"
+            {...register("days", { required: true })}
+            required
+            placeholder="Please Type Days"
+          />
+          <br />
+          <br />
+          <input
+            className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
+            type="number"
+            {...register("person", { required: true })}
+            required
+            placeholder="Please Type Person"
+          />
+          <br />
+          <br />
+          <input
+            className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
+            type="link"
+            {...register("imagelink", { required: true })}
+            required
+            placeholder="Please Type image Link"
+          />
+          <br />
+          <br />
+          {/* errors will return when field validation fails  */}
+          {errors.exampleRequired && <span>This field is required</span>}
+          <input
+            style={{ backgroundColor: "tomato" }}
+            className="p-2 mb-5  btn  text-center w-100 fw-bolder fs-4"
+            type="Submit"
+          />
+        </form>
       </div>
     </div>
   );
