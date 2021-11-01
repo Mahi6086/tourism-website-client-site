@@ -26,7 +26,7 @@ const TourCollection = () => {
       <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
         <div className="col">
           <div
-            className="card h-100 p-3 shadow"
+            className="card h-100 p-3 shadow collection"
             style={{
               backgroundColor: "#FAF5EE",
               border: "2px solid #F53232",

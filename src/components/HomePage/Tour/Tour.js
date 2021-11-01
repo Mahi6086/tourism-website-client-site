@@ -10,7 +10,7 @@ const Tour = (props) => {
       <div className="col tour-card">
         <div
           style={{ backgroundColor: "#FFFFFF" }}
-          className="card h-100 p-3 shadow "
+          className="card h-100 p-3 shadow element"
         >
           <img
             src={image}

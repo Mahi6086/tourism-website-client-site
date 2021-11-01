@@ -1,5 +1,6 @@
 .icon:hover {
   color: tomato;
+  cursor: pointer;
   /* font-size: 2rem;
   transition: all 0.3s linear;
   transform: scale(120%); */

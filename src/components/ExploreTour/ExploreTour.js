@@ -15,7 +15,7 @@ const ExploreTour = () => {
   }, []);
   return (
     <div style={{ backgroundColor: "#FAF5EE" }} className="tour-details">
-      <div className="container mt-5 pb-5 pt-5">
+      <div className="container  pb-5 pt-5">
         <div>
           <h4 style={{ color: "tomato" }} className="text-center fw-bold">
             Time to Travel

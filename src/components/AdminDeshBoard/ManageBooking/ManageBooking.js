@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
+import "./ManageBooking.css";
 const ManageBooking = () => {
   const [booking, setBooking] = useState([]);
   useEffect(() => {
@@ -39,39 +40,46 @@ const ManageBooking = () => {
         </h1>
 
         {/* {event?.length} */}
-        <Table striped bordered hover className="border  border-dark container">
-          <thead>
-            <tr>
-              <th className="p-3">SL</th>
-              <th className="p-3">Location</th>
-              <th className="p-3">Your Name</th>
-              <th className="p-3">Your Email</th>
-              <th className="p-3">Travel Date</th>
-              {/* <th className="p-3">Status</th> */}
-              <th className="p-3">Action</th>
-            </tr>
-          </thead>
-          {booking?.map((pd, index) => (
-            <tbody>
+        <div className="table">
+          <Table
+            striped
+            bordered
+            hover
+            className="border  border-dark container"
+          >
+            <thead>
               <tr>
-                <td className="p-3 fw-bolder">{index}</td>
-                <td className="p-3 fw-bolder">{pd.location}</td>
-                <td className="p-3 fw-bolder">{pd.name}</td>
-                <td className="p-3 fw-bolder">{pd.email}</td>
-                <td className="p-3 fw-bolder">{pd.date}</td>
-                {/* <td style={{ color: "tomato" }} className="p-3 fw-bolder">
+                <th className="p-3">SL</th>
+                <th className="p-3">Location</th>
+                <th className="p-3">Your Name</th>
+                <th className="p-3">Your Email</th>
+                <th className="p-3">Travel Date</th>
+                {/* <th className="p-3">Status</th> */}
+                <th className="p-3">Action</th>
+              </tr>
+            </thead>
+            {booking?.map((pd, index) => (
+              <tbody>
+                <tr>
+                  <td className="p-3 fw-bolder">{index}</td>
+                  <td className="p-3 fw-bolder">{pd.location}</td>
+                  <td className="p-3 fw-bolder">{pd.name}</td>
+                  <td className="p-3 fw-bolder">{pd.email}</td>
+                  <td className="p-3 fw-bolder">{pd.date}</td>
+                  {/* <td style={{ color: "tomato" }} className="p-3 fw-bolder">
                   {pd.status}
                 </td> */}
-                <button
-                  className="btn bg-info p-2 mt-2 fw-bolder"
-                  onClick={() => handleDelete(pd._id)}
-                >
-                  Delete
-                </button>
-              </tr>
-            </tbody>
-          ))}
-        </Table>
+                  <button
+                    className="btn bg-info p-2 mt-2 fw-bolder"
+                    onClick={() => handleDelete(pd._id)}
+                  >
+                    Delete
+                  </button>
+                </tr>
+              </tbody>
+            ))}
+          </Table>
+        </div>
       </div>
     </div>
   );

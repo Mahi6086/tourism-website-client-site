@@ -34,7 +34,7 @@ const PlaceOrder = () => {
   return (
     <div>
       <div style={{ backgroundColor: "#FAF5EE" }}>
-        <div className=" container mt-5 mb-5 rounded rounded-3">
+        <div className=" container pt-5 mb-5 rounded rounded-3">
           <h1
             style={{ color: "tomato", fontSize: "40px" }}
             className="fw-bolder text-center pt-5 pb-5"
@@ -55,6 +55,7 @@ const PlaceOrder = () => {
               <input
                 className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
                 type="text"
+                value={user?.displayName}
                 {...register("name")}
                 required
                 placeholder="Please Type Your Name"
@@ -64,6 +65,7 @@ const PlaceOrder = () => {
                 //   defaultValue={data.status}
                 className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
                 type="email"
+                value={user?.email}
                 {...register("email")}
                 required
                 placeholder="Please Type Your E-mail"

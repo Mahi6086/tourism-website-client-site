@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import useAuth from "../../../Hook/useAuth";
 import AddBooking from "../AddBooking/AddBooking";
 import ManageBooking from "../ManageBooking/ManageBooking";
 import YourBooking from "../YourBooking/YourBooking";
 import "./Admin.css";
 
 const Admin = () => {
+  const { user } = useAuth();
   const [control, setControl] = useState("addEvent");
   return (
     <div className="admin-container">
@@ -42,6 +44,16 @@ const Admin = () => {
               </div>
             </div>
             <div className="col-12 col-md-10 text-center  text-center">
+              <h1 className="mt-5 mb-5  W-50">
+                Welcome!!
+                <span
+                  style={{ color: "tomato" }}
+                  className=" text-decoration-none P-3 rounded rounded-3 ms-2 me-2"
+                >
+                  {user.displayName}.
+                </span>
+                Have a Nice Day.
+              </h1>
               <div className="right-part ">
                 {control === "addBooking" && <AddBooking></AddBooking>}
                 {control === "manageBooking" && <ManageBooking></ManageBooking>}
