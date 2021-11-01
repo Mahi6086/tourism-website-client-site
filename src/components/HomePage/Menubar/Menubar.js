@@ -7,7 +7,7 @@ import useAuth from "../../../Hook/useAuth";
 const Menubar = () => {
   const { handleLogout, user } = useAuth();
   return (
-    <div className="p-3" style={{ backgroundColor: "#FAF5EE" }}>
+    <div className="p-3 sticky-lg-top" style={{ backgroundColor: "#FAF5EE" }}>
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">

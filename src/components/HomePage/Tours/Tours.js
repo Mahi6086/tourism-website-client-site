@@ -10,9 +10,9 @@ const Tours = () => {
   }, []);
   return (
     <div
-      className="bg-light"
+      className=""
       style={{
-        // backgroundColor: "#FAF5EE",
+        backgroundColor: "#FAF5EE",
         // border: "2px solid #F53232",
         borderRadius: "10px",
       }}

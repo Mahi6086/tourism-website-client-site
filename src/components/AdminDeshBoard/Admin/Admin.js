@@ -26,19 +26,19 @@ const Admin = () => {
                     onClick={() => setControl("yourBooking")}
                     className="admin-menu p-2 text-center fw-bolder fs-5"
                   >
-                    Your Booking
+                    <i class="fas fa-user-alt me-1"></i> Your Booking
                   </li>
                   <li
                     onClick={() => setControl("addBooking")}
                     className="admin-menu p-2 text-center fw-bolder fs-5"
                   >
-                    Add Booking
+                    <i class="fas fa-user-plus me-1"></i> Add Booking
                   </li>
                   <li
                     onClick={() => setControl("manageBooking")}
                     className="admin-menu p-2 text-center fw-bolder fs-5"
                   >
-                    Manage All Booking
+                    <i class="fas fa-users me-1"></i> Manage All Booking
                   </li>
                 </div>
               </div>
