@@ -16,6 +16,7 @@ import AddBooking from "./components/AdminDeshBoard/AddBooking/AddBooking";
 import ManageBooking from "./components/AdminDeshBoard/ManageBooking/ManageBooking";
 import YourBooking from "./components/AdminDeshBoard/YourBooking/YourBooking";
 import PlaceOrder from "./components/PlaceOrder/PlaceOrder";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/tours">
             <Tours></Tours>
+          </Route>
+          <Route path="/about">
+            <About></About>
           </Route>
           <Route path="/contact">
             <Contact></Contact>

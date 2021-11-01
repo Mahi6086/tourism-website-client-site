@@ -5,16 +5,25 @@ import travel from "../../../images/about-one-img-1.png";
 
 const TravelArragement = () => {
   return (
-    <div style={{ backgroundColor: "#FAF5EE" }} className="">
+    <div style={{ backgroundColor: "#FAF5EE" }} className="pt-5">
+      <h4 style={{ color: "#E8604C" }} className="text-center fw-bold">
+        We Are Specialized In
+      </h4>
+      <h1
+        style={{ color: "#212121" }}
+        className="text-center mb-3 fw-bold mt-3"
+      >
+        Tour & Travel Arrangement
+      </h1>
       <div className="container">
         <div className="row p-5 d-flex justify-content-center align-items-center">
-          <div className="col col-12 col-md-6 pe-5">
+          <div className="col col-12 col-md-6 pe-5 mb-5">
             <div>
               <img className="img-fluid" src={travel} alt="" />
             </div>
           </div>
-          <div className="col col-12 col-md-6 ps-5">
-            <h4 style={{ color: "#E8604C" }} className="text-center fw-bold">
+          <div className="col col-12 col-md-6 ps-5 mb-3">
+            {/* <h4 style={{ color: "#E8604C" }} className="text-center fw-bold">
               We Are Specialized In
             </h4>
             <h1
@@ -22,7 +31,7 @@ const TravelArragement = () => {
               className="text-center mb-3 fw-bold mt-3"
             >
               Tour & Travel Arrangement
-            </h1>
+            </h1> */}
             <div className="d-flex">
               <div>
                 <img style={{ width: "50px" }} src={icon1} alt="" />

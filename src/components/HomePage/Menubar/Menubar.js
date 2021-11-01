@@ -33,6 +33,10 @@ const Menubar = () => {
                   Tours
                 </Link>
 
+                <Link to="/about" className="nav-link text-dark fw-bolder mt-3">
+                  About
+                </Link>
+
                 <Link
                   to="/contact"
                   className="nav-link text-dark fw-bolder mt-3"
@@ -40,7 +44,7 @@ const Menubar = () => {
                   Contact
                 </Link>
 
-                <Link
+                {/*    <Link
                   to="/admin"
                   className="nav-link text-dark fw-bolder mt-3 me-2"
                 >
@@ -48,7 +52,18 @@ const Menubar = () => {
                     <i className="fas fa-user-shield me-1"></i>
                   </span>
                   Admin
-                </Link>
+                </Link> */}
+                {user.email && (
+                  <Link
+                    to="/admin"
+                    className="nav-link text-dark fw-bolder mt-3 me-2"
+                  >
+                    <span className="">
+                      <i className="fas fa-user-shield me-1"></i>
+                    </span>
+                    Admin
+                  </Link>
+                )}
 
                 {user.email ? (
                   <div

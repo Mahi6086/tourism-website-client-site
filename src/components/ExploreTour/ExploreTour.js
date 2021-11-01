@@ -9,7 +9,7 @@ const ExploreTour = () => {
   const [exploreTour, setExploreTour] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/tours/${tourId}`)
+    fetch(`https://mysterious-spire-59402.herokuapp.com/tours/${tourId}`)
       .then((res) => res.json())
       .then((data) => setExploreTour(data));
   }, []);
