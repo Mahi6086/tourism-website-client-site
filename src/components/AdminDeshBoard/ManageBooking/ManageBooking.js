@@ -5,11 +5,12 @@ import "./ManageBooking.css";
 const ManageBooking = () => {
   const [booking, setBooking] = useState([]);
   const [statuss, setStatuss] = useState(false);
+
   useEffect(() => {
     fetch("https://mysterious-spire-59402.herokuapp.com/allBooking")
       .then((res) => res.json())
       .then((data) => setBooking(data));
-  }, [statuss]);
+  }, []);
 
   const handleDelete = (id) => {
     const procced = window.confirm("Are you sure, you want to delete?");
@@ -32,7 +33,7 @@ const ManageBooking = () => {
   };
   const handleStatus = (id) => {
     axios
-      .put(`https://localhost:5000/updateStatus`, { id })
+      .put(`https://mysterious-spire-59402.herokuapp.com/updateStatus`, { id })
       .then((res) => console.log("Your order Approved"))
       .then((data) => setStatuss(true));
   };
