@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import "./ExploreTour.css";
 
 import { Link } from "react-router-dom";
+import PlaceOrder from "../PlaceOrder/PlaceOrder";
 
 const ExploreTour = () => {
   const { tourId } = useParams();
@@ -168,6 +169,7 @@ const ExploreTour = () => {
           </div>
         </div> */}
       </div>
+      <PlaceOrder></PlaceOrder>
     </div>
   );
 };

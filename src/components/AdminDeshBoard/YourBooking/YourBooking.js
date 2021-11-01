@@ -59,7 +59,7 @@ const YourBooking = () => {
                 <th className="p-3">Your Name</th>
                 <th className="p-3">Your Email</th>
                 <th className="p-3">Travel Date</th>
-                {/*  <th className="p-3">Status</th> */}
+                <th className="p-3">Status</th>
                 <th className="p-3">Action</th>
               </tr>
             </thead>
@@ -71,15 +71,20 @@ const YourBooking = () => {
                   <td className="p-3 fw-bolder">{pd.name}</td>
                   <td className="p-3 fw-bolder">{pd.email}</td>
                   <td className="p-3 fw-bolder">{pd.date}</td>
-                  {/* <td style={{ color: "tomato" }} className="p-3 fw-bolder">
-                  {pd.status}
-                </td> */}
-                  <button
-                    className="btn bg-info p-2 mt-2 fw-bolder"
-                    onClick={() => handleDelete(pd._id)}
-                  >
-                    Delete
-                  </button>
+                  <td className="p-3 fw-bolder">
+                    {" "}
+                    <button className="btn bg-info p-2 mt-2 fw-bolder">
+                      {pd.status}..
+                    </button>
+                  </td>
+                  <td className="pt-3 fw-bolder">
+                    <button
+                      className="btn bg-info p-2 mt-2 fw-bolder"
+                      onClick={() => handleDelete(pd._id)}
+                    >
+                      Delete
+                    </button>
+                  </td>
                 </tr>
               </tbody>
             ))}

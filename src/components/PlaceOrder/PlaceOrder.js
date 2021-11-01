@@ -14,7 +14,7 @@ const PlaceOrder = () => {
   } = useForm();
   const onSubmit = (data) => {
     data.status = "Pending";
-    data.status = user?.email;
+    // data.status = user?.email;
 
     axios
       .post("https://mysterious-spire-59402.herokuapp.com/addBooking", data)
