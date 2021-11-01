@@ -8,7 +8,7 @@ const YourBooking = () => {
 
   const [booking, setBooking] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/myBooking")
+    fetch("https://mysterious-spire-59402.herokuapp.com/myBooking")
       .then((res) => res.json())
       .then((data) => {
         const myOrder = data.filter((dp) => dp.email == user.email);
@@ -19,7 +19,7 @@ const YourBooking = () => {
   const handleDelete = (id) => {
     const procced = window.confirm("Are you sure, you want to delete?");
     if (procced) {
-      const url = `http://localhost:5000/tours/${id}`;
+      const url = `https://mysterious-spire-59402.herokuapp.com/tours/${id}`;
 
       fetch(url, {
         method: "DELETE",

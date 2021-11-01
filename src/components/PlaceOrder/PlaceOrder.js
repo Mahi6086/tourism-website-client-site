@@ -5,12 +5,6 @@ import useAuth from "../../Hook/useAuth";
 
 const PlaceOrder = () => {
   const { user } = useAuth();
-  /* const [tours, setTours] = useState([]);
-    useEffect(() => {
-      fetch("http://localhost:5000/tours")
-        .then((res) => res.json())
-        .then((data) => setTours(data));
-    }, []); */
 
   const {
     register,
@@ -22,12 +16,14 @@ const PlaceOrder = () => {
     data.status = "Pending";
     data.status = user?.email;
 
-    axios.post("http://localhost:5000/addBooking", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("added successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://mysterious-spire-59402.herokuapp.com/addBooking", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("added successfully");
+          reset();
+        }
+      });
 
     console.log(data);
   };

@@ -4,7 +4,7 @@ import "./ManageBooking.css";
 const ManageBooking = () => {
   const [booking, setBooking] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/allBooking")
+    fetch("https://mysterious-spire-59402.herokuapp.com/allBooking")
       .then((res) => res.json())
       .then((data) => setBooking(data));
   }, []);
@@ -12,7 +12,7 @@ const ManageBooking = () => {
   const handleDelete = (id) => {
     const procced = window.confirm("Are you sure, you want to delete?");
     if (procced) {
-      const url = `http://localhost:5000/tours/${id}`;
+      const url = `https://mysterious-spire-59402.herokuapp.com/tours/${id}`;
 
       fetch(url, {
         method: "DELETE",
