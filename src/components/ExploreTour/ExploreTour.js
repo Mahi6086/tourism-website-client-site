@@ -96,78 +96,7 @@ const ExploreTour = () => {
             </div>
           </div>
         </div>
-        {/*    <div className=" mt-5 mb-5 rounded rounded-3">
-          <h1
-            style={{ color: "tomato", fontSize: "40px" }}
-            className="fw-bolder text-center pt-5 pb-5"
-          >
-            Please Booking Your Travel Form
-          </h1>
-          <div>
-            <form onSubmit={handleSubmit(onSubmit)}>
-            
-              <input
-                className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
-                type="text"
-                {...register("location")}
-                required
-                placeholder="Location"
-              />
-              <br /> <br />
-              <input
-                className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
-                type="text"
-                {...register("name")}
-                required
-                placeholder="Please Type Your Name"
-              />
-              <br /> <br />
-              <input
-                className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
-                type="email"
-                {...register("email")}
-                required
-                placeholder="Please Type Your E-mail"
-              />
-              <br /> <br />
-             
-              <input
-                className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
-                type="number"
-                {...register("phone", { required: true })}
-                required
-                placeholder="Please Type Your Number"
-              />
-              <br />
-              <br />
-              <input
-                className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
-                type="date"
-                {...register("date", { required: true })}
-                required
-                placeholder="dd/mm/yy"
-              />
-              <br />
-              <br />
-              <textarea
-                className="p-2 m-2 w-100 border-0 rounded rounded-3 p-3 text-black-50 fs-6"
-                type="textarea"
-                {...register("message", { required: true })}
-                required
-                placeholder="Please Type Your Message"
-              />
-              <br />
-              <br />
-            
-              {errors.exampleRequired && <span>This field is required</span>}
-              <input
-                style={{ backgroundColor: "tomato" }}
-                className="p-2 mb-5  btn  text-center w-100 fw-bolder fs-4"
-                type="Submit"
-              />
-            </form>
-          </div>
-        </div> */}
+        
       </div>
       <PlaceOrder></PlaceOrder>
     </div>

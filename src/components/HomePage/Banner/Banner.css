@@ -1,8 +1,23 @@
 .tour-title {
-  margin-bottom: 600px;
+  margin-bottom: 200px;
+}
+.banner_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transform-origin: top center;
+  transition: transform 7000ms ease, -webkit-transform 7000ms ease;
+  transform: scale(1);
+  z-index: -1;
 }
 .banner-title {
-  font-size: 100px;
+  font-size: 50px;
 }
 @media only screen and (max-width: 688px) {
   .tour-title {

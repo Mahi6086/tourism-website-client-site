@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../../../images/Banner/banner-1.jpg";
-import img2 from "../../../images/Banner/banner6 (2).jpg";
-import img3 from "../../../images/Banner/banner3.jpg";
+import img1 from "../../../images/Banner/main-slider-1-3.jpg";
+import img2 from "../../../images/Banner/main-slider-1-2.jpg";
+import img3 from "../../../images/Banner/main-slider-1-1.jpg";
 import "./Banner.css";
 
 const Banner = () => {
@@ -37,8 +37,9 @@ const Banner = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
+              className="banner_img"
               src={img1}
-              className="d-block w-100 img-fluid opacity-75"
+              className="d-block w-100 img-fluid "
               alt="..."
             />
             <div
@@ -55,15 +56,16 @@ const Banner = () => {
               >
                 Plan Your Best Holiday <br /> With Us & Enjoy
               </h1>
-              <h3 className="fw-bolder">
+              <h4 className="">
                 Travelling Around The World. Journy To Explore The Nature.
-              </h3>
+              </h4>
             </div>
           </div>
           <div className="carousel-item">
             <img
+              className="banner_img"
               src={img2}
-              className="d-block img-fluid w-100 opacity-75"
+              className="d-block img-fluid w-100 "
               alt="..."
             />
             <div
@@ -80,15 +82,16 @@ const Banner = () => {
               >
                 Explore Your Summer Holiday <br /> With Us & Enjoy
               </h1>
-              <h3 className="fw-bolder">
+              <h4 className="">
                 Travelling Around The World. Journy To Explore The Nature.
-              </h3>
+              </h4>
             </div>
           </div>
           <div className="carousel-item">
             <img
+              className="banner_img"
               src={img3}
-              className="d-block  img-fluid w-100 opacity-75"
+              className="d-block  img-fluid w-100"
               alt="..."
             />
             <div
@@ -105,7 +108,7 @@ const Banner = () => {
               >
                 Travel & Adventures
               </h1>
-              <h3 className="fw-bolder">Where Would You Like To Go?</h3>
+              <h4 className="">Where Would You Like To Go?</h4>
             </div>
           </div>
         </div>
