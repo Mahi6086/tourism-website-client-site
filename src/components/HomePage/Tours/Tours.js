@@ -19,13 +19,30 @@ const Tours = () => {
     >
       <div className="container-md  pt-5 pb-5">
         <div>
-          <h4 style={{ color: "#E8604C" }} className="text-center fw-bold">
+          <h4
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            style={{ color: "#E8604C" }}
+            className="text-center fw-bold"
+          >
             The Top Places For
           </h4>
-          <h1 style={{ color: "#212121" }} className="text-center mb-3 fw-bold">
+          <h1
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            style={{ color: "#212121" }}
+            className="text-center mb-3 fw-bold"
+          >
             Planning Your Holiday
           </h1>
-          <p className="text-black-50 text-center mb-5">
+          <p
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            className="text-black-50 text-center mb-5"
+          >
             Popular Package Amazing Tours Liked By The Adventurous, Sea-beach,
             Mountain, Couple Tour, Night Fall.
           </p>

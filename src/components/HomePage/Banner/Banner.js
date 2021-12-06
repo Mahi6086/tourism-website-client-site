@@ -47,6 +47,11 @@ const Banner = () => {
               className="carousel-caption d-none d-md-block tour-title"
             >
               <h1
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1500"
+                data-aos-delay="300"
+                data-aos-offset="0"
                 style={{
                   color: "tomato",
 
@@ -56,7 +61,14 @@ const Banner = () => {
               >
                 Plan Your Best Holiday <br /> With Us & Enjoy
               </h1>
-              <h4 className="">
+              <h4
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1500"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                className=""
+              >
                 Travelling Around The World. Journy To Explore The Nature.
               </h4>
             </div>
@@ -73,6 +85,11 @@ const Banner = () => {
               className="carousel-caption d-none d-md-block tour-title"
             >
               <h1
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1500"
+                data-aos-delay="300"
+                data-aos-offset="0"
                 style={{
                   color: "tomato",
 
@@ -82,7 +99,14 @@ const Banner = () => {
               >
                 Explore Your Summer Holiday <br /> With Us & Enjoy
               </h1>
-              <h4 className="">
+              <h4
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1500"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                className=""
+              >
                 Travelling Around The World. Journy To Explore The Nature.
               </h4>
             </div>
@@ -99,6 +123,11 @@ const Banner = () => {
               className="carousel-caption d-none d-md-block tour-title"
             >
               <h1
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1500"
+                data-aos-delay="300"
+                data-aos-offset="0"
                 style={{
                   color: "tomato",
 
@@ -108,7 +137,16 @@ const Banner = () => {
               >
                 Travel & Adventures
               </h1>
-              <h4 className="">Where Would You Like To Go?</h4>
+              <h4
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1500"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                className=""
+              >
+                Where Would You Like To Go?
+              </h4>
             </div>
           </div>
         </div>

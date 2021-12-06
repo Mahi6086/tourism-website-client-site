@@ -7,14 +7,31 @@ const About = () => {
     <div style={{ backgroundColor: "#FAF5EE" }}>
       <div className="container pt-5">
         <div>
-          <h4 style={{ color: "tomato" }} className="text-center fw-bold">
+          <h4
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            style={{ color: "tomato" }}
+            className="text-center fw-bold"
+          >
             Why Choose Us
           </h4>
-          <h1 style={{ color: "#212121" }} className="text-center mb-3 fw-bold">
+          <h1
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            style={{ color: "#212121" }}
+            className="text-center mb-3 fw-bold"
+          >
             We Care About Our Traveller <br />
             With Top Priority
           </h1>
-          <p className="text-black-50 text-center mb-4">
+          <p
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            className="text-black-50 text-center mb-4"
+          >
             Tevily is here to help you travel the world with cheap flights,
             discount hotels, and <br />
             train tickets. Looking to find great travel deals or enjoy the
@@ -23,7 +40,13 @@ const About = () => {
         </div>
         <div className="row">
           <div className="col-12 col-sm-12 col-md-6 mb-5">
-            <div className="accordion" id="accordionExample">
+            <div
+              data-aos="zoom-in-right"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              className="accordion"
+              id="accordionExample"
+            >
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
                   <button
@@ -266,7 +289,12 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-12 col-md-6 mb-5 about-img">
+          <div
+            data-aos="zoom-in-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            className="col-12 col-sm-12 col-md-6 mb-5 about-img"
+          >
             <img className="h-100 ms-lg-3 rounded-3 img" src={about} alt="" />
           </div>
         </div>

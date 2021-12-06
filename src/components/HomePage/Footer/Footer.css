@@ -10,4 +10,5 @@
 }
 .logo:hover {
   color: tomato;
+  cursor: pointer;
 }

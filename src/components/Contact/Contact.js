@@ -8,13 +8,30 @@ const Contact = () => {
       <div>{/* map */}</div>
       <div className="container-md mt-5">
         <div>
-          <h4 style={{ color: "#E8604C" }} className="text-center fw-bold">
+          <h4
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            style={{ color: "#E8604C" }}
+            className="text-center fw-bold"
+          >
             We are here to help
           </h4>
-          <h1 style={{ color: "#212121" }} className="text-center mb-3 fw-bold">
+          <h1
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            style={{ color: "#212121" }}
+            className="text-center mb-3 fw-bold"
+          >
             Reach Us Anyway
           </h1>
-          <p className="text-black-50 text-center mb-4">
+          <p
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            className="text-black-50 text-center mb-4"
+          >
             For your Booking you can call to tevily or email <br /> to tevily or
             come to our tevily location. we ensure to give best trip.
             {/* impairments although we consider this also to include any child or
@@ -23,7 +40,12 @@ const Contact = () => {
           </p>
           <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col">
-              <div className="card h-100 p-3 shadow">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="card h-100 p-3 shadow"
+              >
                 <img
                   src={contact1}
                   className="card-img-top w-25 mx-auto"
@@ -38,7 +60,12 @@ const Contact = () => {
               </div>
             </div>
             <div className="col">
-              <div className="card p-3 h-100 shadow">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="card p-3 h-100 shadow"
+              >
                 <img
                   src={contact2}
                   className="card-img-top w-25 mx-auto"
@@ -53,7 +80,12 @@ const Contact = () => {
               </div>
             </div>
             <div className="col">
-              <div className="card p-3 h-100 shadow ">
+              <div
+                data-aos="zoom-in-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="card p-3 h-100 shadow "
+              >
                 <img
                   src={contact3}
                   className="card-img-top w-25 mx-auto"
@@ -72,17 +104,33 @@ const Contact = () => {
         <div className="mt-5 mb-5">
           {/* form */}
           <div>
-            <h4 style={{ color: "#E8604C" }} className="text-center fw-bold">
+            <h4
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              style={{ color: "#E8604C" }}
+              className="text-center fw-bold"
+            >
               Talk with our team
             </h4>
             <h1
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
               style={{ color: "#212121" }}
               className="text-center mb-3 fw-bold"
             >
               Any Question? Feel Free to Contact
             </h1>
           </div>
-          <form className="row g-3 mt-3">
+          <form
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            className="row g-3 mt-3"
+          >
             <div className="col-md-6">
               <input
                 style={{

@@ -44,7 +44,14 @@ const Admin = () => {
               </div>
             </div>
             <div className="col-12 col-md-10 text-center  text-center">
-              <h1 className="mt-5 mb-5  W-50">
+              <h1
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1500"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                className="mt-5 mb-5  W-50"
+              >
                 Welcome!!
                 <span
                   style={{ color: "tomato" }}

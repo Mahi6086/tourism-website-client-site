@@ -9,6 +9,9 @@ const Tour = (props) => {
     <div>
       <div className="col tour-card">
         <div
+          data-aos="zoom-in-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
           style={{ backgroundColor: "#FFFFFF" }}
           className="card h-100 p-3 shadow element"
         >

@@ -6,10 +6,19 @@ import travel from "../../../images/about-one-img-1.png";
 const TravelArragement = () => {
   return (
     <div style={{ backgroundColor: "#FAF5EE" }} className="pt-5">
-      <h4 style={{ color: "#E8604C" }} className="text-center fw-bold">
+      <h4
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        style={{ color: "#E8604C" }}
+        className="text-center fw-bold"
+      >
         We Are Specialized In
       </h4>
       <h1
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
         style={{ color: "#212121" }}
         className="text-center mb-3 fw-bold mt-3"
       >
@@ -18,7 +27,13 @@ const TravelArragement = () => {
       <div className="container">
         <div className="row p-5 d-flex justify-content-center align-items-center">
           <div className="col col-12 col-md-6 pe-5 mb-5">
-            <div>
+            <div
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+              data-aos-offset="0"
+            >
               <img className="img-fluid" src={travel} alt="" />
             </div>
           </div>
@@ -32,7 +47,12 @@ const TravelArragement = () => {
             >
               Tour & Travel Arrangement
             </h1> */}
-            <div className="d-flex">
+            <div
+              data-aos="fade-left"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              className="d-flex"
+            >
               <div>
                 <img style={{ width: "50px" }} src={icon1} alt="" />
               </div>
@@ -49,7 +69,12 @@ const TravelArragement = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex align-item-center">
+            <div
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              className="d-flex align-item-center"
+            >
               <div>
                 <img style={{ width: "50px" }} src={icon2} alt="" />
               </div>

@@ -1,29 +1,29 @@
 .tour-title {
-  margin-bottom: 200px;
+  padding-bottom: 200px;
 }
 .banner_img {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0; */
   background-blend-mode: darken;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   transform-origin: top center;
   transition: transform 7000ms ease, -webkit-transform 7000ms ease;
   transform: scale(1);
-  z-index: -1;
+  z-index: -1; */
 }
 .banner-title {
   font-size: 50px;
 }
 @media only screen and (max-width: 688px) {
   .tour-title {
-    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   .banner-title {
-    font-size: 30px;
+    font-size: 10px;
   }
 }

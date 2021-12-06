@@ -9,16 +9,30 @@ import tour6 from "../../../images/Tour Collection/road-signs.png";
 const TourCollection = () => {
   return (
     <div className="mt-5 mb-5 container">
-      <h4 style={{ color: "#E8604C" }} className="text-center fw-bold">
+      <h4
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        style={{ color: "#E8604C" }}
+        className="text-center fw-bold"
+      >
         Are you ready to travel?
       </h4>
       <h1
+        data-aos="fade-left"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
         style={{ color: "#212121" }}
         className="text-center mb-3 fw-bold mt-3"
       >
         Choose Your Favorite Tour
       </h1>
-      <p className="text-black-50 text-center mb-4">
+      <p
+        data-aos="fade-right"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        className="text-black-50 text-center mb-4"
+      >
         Tevily is a World Leading Online Tour Booking Platform. <br /> Where you
         can Booking your favorite tour & enjoyed advanture, seac beach, mountain
         tour etc.
@@ -26,6 +40,9 @@ const TourCollection = () => {
       <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
         <div className="col">
           <div
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
             className="card h-100 p-3 shadow collection"
             style={{
               backgroundColor: "#FAF5EE",
@@ -41,6 +58,9 @@ const TourCollection = () => {
         </div>
         <div className="col">
           <div
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
             className="card p-3 h-100 shadow"
             style={{
               backgroundColor: "#FAF5EE",
@@ -56,6 +76,9 @@ const TourCollection = () => {
         </div>
         <div className="col">
           <div
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
             className="card p-3 h-100 shadow "
             style={{
               backgroundColor: "#FAF5EE",
@@ -71,6 +94,9 @@ const TourCollection = () => {
         </div>
         <div className="col">
           <div
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
             className="card p-3 h-100 shadow "
             style={{
               backgroundColor: "#FAF5EE",
@@ -86,6 +112,9 @@ const TourCollection = () => {
         </div>
         <div className="col">
           <div
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
             className="card p-3 h-100 shadow "
             style={{
               backgroundColor: "#FAF5EE",
@@ -101,6 +130,9 @@ const TourCollection = () => {
         </div>
         <div className="col">
           <div
+            data-aos="zoom-in-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
             className="card p-3 h-100 shadow"
             style={{
               backgroundColor: "#FAF5EE",

@@ -12,7 +12,12 @@ const Menubar = () => {
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid">
             <Link to="/home" className="nav-link">
-              <div className="">
+              <div
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className=""
+              >
                 <img className="w-75" src={logo} alt="" />
               </div>
             </Link>
@@ -28,7 +33,12 @@ const Menubar = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div className="navbar-nav ms-auto fs-5 ">
+              <div
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                className="navbar-nav ms-auto fs-5 "
+              >
                 <Link to="/tours" className="nav-link text-dark fw-bolder mt-3">
                   Tours
                 </Link>
